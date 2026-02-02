@@ -97,8 +97,11 @@ Reads a Ghost JSON export and generates Astro-compatible markdown files. Handles
 
 ## Reference files
 
+- **[Creating a new post](docs/creating-posts.md)** — frontmatter template, images, drafts, deploy
+
 ```
 docs/
+├── creating-posts.md          # How to write and publish a new post
 ├── cloudflare-redirects.csv   # 73 bulk redirects (old domain → new)
 ├── disqus-url-mapper.csv      # Disqus comment URL mappings
 └── plan.md                    # Original migration plan
