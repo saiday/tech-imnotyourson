@@ -3,7 +3,10 @@
 
 <header class="site-header">
   <div class="container">
-    <a href="/" class="site-title">imnotyourson</a>
+    <div class="site-branding">
+      <a href="/" class="site-title">imnotyourson</a>
+      <p class="site-subtitle">Your code and agents are scapegoats; I want you to be nice to it.</p>
+    </div>
     <nav class="site-nav">
       <a href="/rss.xml" class="nav-link">RSS</a>
     </nav>
@@ -34,6 +37,19 @@
   .site-title:hover {
     text-decoration: none;
     opacity: 0.7;
+  }
+
+  .site-branding {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .site-subtitle {
+    margin: 0;
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    font-style: italic;
   }
 
   .site-nav {
