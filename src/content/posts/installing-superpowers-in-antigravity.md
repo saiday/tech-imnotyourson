@@ -3,7 +3,7 @@ title: "Installing Superpowers (or any Claude skills) in Antigravity"
 slug: "installing-superpowers-in-antigravity"
 date: "2026-02-06T00:00:00.000Z"
 description: "A community adaptation guide for using the Superpowers workflow system with Antigravity. Learn how to install and configure skills from the Superpowers repository."
-tags: ["antigravity", "superpowers", "tools", "workflows"]
+tags: ["antigravity", "skills", "workflows"]
 draft: false
 ---
 
