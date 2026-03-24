@@ -7,7 +7,7 @@ tags: ["macOS", "Xcode"]
 draft: false
 ---
 
-Your app builds fine but shows a blank icon in the Dock and Cmd+Tab. You've verified the PNG exists, the asset catalog is there — but no icon. Here's what's likely going on.
+You've verified the asset catalog is there, but app shows a blank icon in the Dock and Cmd+Tab?
 
 ## The Setup That Works
 
