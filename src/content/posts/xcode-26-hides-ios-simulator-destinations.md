@@ -7,7 +7,7 @@ tags: ["xcode", "ios", "cocoapods"]
 draft: false
 ---
 
-Upgrade to Xcode 26 and your CocoaPods project loses every simulator from the destination picker. The dropdown shows only `Any iOS Simulator Device`. `xcodebuild` agrees:
+Upgrade to Xcode 26 and your project loses every simulator from the destination picker. The dropdown shows only `Any iOS Simulator Device` and so do `xcodebuild`?
 
 ```
 $ xcodebuild -workspace MyApp.xcworkspace -scheme MyApp -showdestinations
@@ -20,8 +20,7 @@ Diagnosis:
 - `xcrun xctrace list devices`: shows every simulator
 - Fresh iOS project on the same Mac and Xcode: shows every simulator
 - Your project (both Xcode UI and `xcodebuild`): missing every simulator
-
-The bug is inside your project, not your system.
+- Your porject use CocoaPods as package manager
 
 ## The cause
 
@@ -31,7 +30,7 @@ CocoaPods detects vendored binaries that lack an arm64-for-simulator slice and i
 EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64
 ```
 
-Common triggers are pre-xcframework SDKs that still ship as fat `.a` or fat `.framework`: WeChat, Tencent QQ, Geetest, older AliPay, older ad networks. Find yours:
+Common triggers are pre-xcframework SDKs that still ship as fat `.a` or fat `.framework`: For me, they are WeChat, Tencent QQ, Geetest, older AliPay, older ad networks. Find yours:
 
 ```bash
 grep -RIn "EXCLUDED_ARCHS\[sdk=iphonesimulator" Pods/Target\ Support\ Files/
