@@ -191,6 +191,42 @@ const formattedDate = date.toLocaleDateString('en-US', {
     margin: 2rem 0;
   }
 
+  /* Side-by-side blocks: .pair in markdown, first child on the left */
+  .prose .pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 0 0 1.25rem;
+  }
+
+  .prose .pair > * {
+    min-width: 0;
+  }
+
+  .prose .pair p {
+    margin: 0 0 0.5rem;
+  }
+
+  .prose .pair pre {
+    margin: 0;
+    max-height: 80vh;
+    overflow: auto;
+  }
+
+  /* Break out of the 720px column when the viewport can afford it */
+  @media (min-width: 1000px) {
+    .prose .pair {
+      width: min(1120px, calc(100vw - 3rem));
+      margin-left: calc(50% - min(1120px, calc(100vw - 3rem)) / 2);
+    }
+  }
+
+  @media (max-width: 700px) {
+    .prose .pair {
+      grid-template-columns: 1fr;
+    }
+  }
+
   /* Gist dark theme overrides */
   .gist .gist-file {
     border-color: #30363d;

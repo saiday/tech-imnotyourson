@@ -5,7 +5,7 @@ import PostLayout from '../layouts/PostLayout.astro';
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
   return posts
-    .filter(post => !post.data.draft)
+    .filter(post => import.meta.env.DEV || !post.data.draft)
     .map(post => ({
       params: { slug: post.data.slug },
       props: { post },

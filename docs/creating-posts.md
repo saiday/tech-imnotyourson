@@ -48,7 +48,7 @@ Reference in markdown with an absolute path:
 
 ## 4. Drafts
 
-Set `draft: true` in frontmatter. The post won't appear in the index, tag pages, RSS feed, or sitemap. It also won't have a generated page at `/{slug}/`.
+Set `draft: true` in frontmatter. The post won't appear in the index, tag pages, RSS feed, or sitemap, and the production build generates no page for it. `npm run dev` does serve it at `/{slug}/` so you can review it locally.
 
 Flip to `draft: false` when ready to publish.
 
