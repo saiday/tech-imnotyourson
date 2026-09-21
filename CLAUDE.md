@@ -18,7 +18,8 @@ JS beyond the Disqus embed and Cloudflare analytics.
 
 ## Before writing or editing a post
 
-Read `docs/tech-post-content-style.md` for voice, and `docs/creating-posts.md` for frontmatter,
+Read `docs/tech-post-content-style.md` for what a post is, its structure and its claims as much
+as its sentences, and `docs/creating-posts.md` for frontmatter,
 images, drafts, and deploy. Those two files are authoritative; do not restate their rules here.
 
 ## Constraints

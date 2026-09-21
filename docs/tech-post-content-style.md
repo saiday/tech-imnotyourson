@@ -11,6 +11,12 @@ explained to them.
 So: the first sentence is their symptom, their goal, or your verdict. The post ends when the last
 instruction ends.
 
+Explain the idea the post's numbers rest on, and nothing the reader uses every day.
+
+## Write the end state
+
+Write from the finished system, not from the order you discovered it.
+
 ## Only write what you hit
 
 Every post is a receipt for something that actually happened at the keyboard. That is the whole
@@ -54,6 +60,7 @@ Nothing in the post exists to make the author look good.
 - No "Hope this helps", "Let's dive in", "As we all know", no apology for the post being short or for
   the gap since the last one.
 - Short posts ship. A paragraph and a snippet is a post. So is a note to yourself.
+- When a passage reads badly, delete it before trying to fix it.
 
 ## Code carries the weight
 
